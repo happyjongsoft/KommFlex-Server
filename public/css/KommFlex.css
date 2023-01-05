@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(0,0,0);
+    /*background-image: url("/public/images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	background-size: cover;*/
+	overflow: hidden;
+}
+
+#demoContainer {
+    position:relative;
+}
+
+#otherClients {
+    padding-left: 48%;
+    position: absolute;
+    bottom: 5%;
+}
+
+.mainVideo {
+    height:100%;
+    width:auto;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.subVideo {
+    height:auto;
+    width:20%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+}
+
+#callerVideo {
+    height:100%;
+    width:auto;
+
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#connectControls {
+    height:auto;
+    width:100%;
+    position: absolute;
+    top: -85%;
+    display: flex;
+    justify-content: center;
+}
+
+#ringButton{
+    background-image: url('/public/images/video_call.png');
+    background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+    border: 0px;
+    background-color: transparent;
+    outline: 0px;
+}
+
+#hangupButton{
+    background-image: url('/public/images/decline.png');
+    background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+    border: 0px;
+    background-color: transparent;
+    outline: 0px;
+    visibility: hidden;
+}
+
+#acceptCallBox{
+    height:auto;
+    width:100%;
+    left: 50%;
+    position: absolute;
+    top: -50%;
+    transform: translate(-50%, -50%);  
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#callAcceptButton{
+    background-image: url('/public/images/video_call.png');
+    background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+    border: 0px;
+    background-color: transparent;
+    outline: 0px;
+    margin:20px;
+}
+
+#callRejectButton{
+    background-image: url('/public/images/decline.png');
+    background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+    border: 0px;
+    background-color: transparent;
+    outline: 0px;
+    margin:20px;
+}
+

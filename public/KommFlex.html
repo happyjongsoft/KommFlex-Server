@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KommFlex</title>
+        <link rel="stylesheet" type="text/css" href="../easyrtc/easyrtc.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/landing.css" />
+        <link rel="stylesheet" type="text/css" href="css/KommFlex.css" />
+
+        <!-- Prettify Code -->
+        <script type="text/javascript" src="js/prettify/prettify.js"></script>
+        <script type="text/javascript" src="js/prettify/loadAndFilter.js"></script>
+        <script type="text/javascript" src="js/prettify/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="js/prettify/prettify.css" />
+        <!-- Assumes global locations for socket.io.js and easyrtc.js -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="../easyrtc/easyrtc.js"></script>
+        <script type="text/javascript" src="js/KommFlex.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="videoDemoContainer">
+                <div id="videos">
+                    <video autoplay="autoplay" muted="muted" playsinline="playsinline" id="selfVideo" class="easyrtcMirror"></video>
+                    <video autoplay="autoplay" playsinline="playsinline" id="callerVideo"></video>
+                </div>
+
+                <div id="acceptCallBox">
+                    <button id="callAcceptButton"></button> 
+                    <button id="callRejectButton"></button>
+                </div>
+
+                <div id="connectControls">
+                    <!-- <button id="ringButton" onclick="ring()"></button>    -->
+                    <button id="hangupButton" onclick="hangup()"></button>                        
+                </div>
+
+                <div id="otherClients"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
